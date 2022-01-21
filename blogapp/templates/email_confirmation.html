@@ -1,0 +1,14 @@
+{% autoescape off %}
+
+Hello {{ name }}!!
+
+Welcome to Blog Application!
+
+Thank you for registering in our blog website. Please confirm your email by clicking on the following link.
+
+Confirmation Link: http://{{ domain }}{% url 'blog:activate' uidb64=uid token=token %} 
+
+
+Thank You!
+
+{% endautoescape %}
